@@ -1,35 +1,49 @@
-# 🐈‍⬛ Sumbul Rizvi's Interactive Resume
+# 🌸 Sumbul Rizvi - Digital Resume
 
-[![Live Resume](https://img.shields.io/badge/View_Resume_→-Live_Site-8A2BE2?style=for-the-badge&logo=github)](https://rizzi-uwu.github.io/sumbul-rizvi-resume/)
+Welcome to my interactive, quirky, and beautifully-coded digital portfolio made with 💖, Tailwind CSS, and a bit of caffeine!
 
-✨ Project Manager | UX Explorer | Data Storyteller  
-...
+## 💼 What This Is
 
-✨ **A playful yet professional resume built with:**  
-- Tailwind CSS for styling  
-- GitHub Pages for hosting  
-- Mobile-first responsiveness  
+A web-based resume to showcase my journey as a:
 
-## 🚀 Quick Start
-1. **Live Version**: [Open Resume](https://YOUR-USERNAME.github.io/interactive-resume)
-2. **Edit Locally**:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/interactive-resume.git
-   open index.html
-   ```
+- 🎯 Project Management Associate  
+- 🧠 UX Researcher  
+- 📊 Data Enthusiast  
+- 😺 Professional Cat Herder (unofficial title)
 
-## 🛠️ How It Works
-```html
-<!-- Example snippet from your resume -->
-<section class="text-center">
-  <h2 class="text-2xl font-semibold">Professional Cat Herder</h2>
-  <p>Turning chaos into structured purr-jects 🐾</p>
-</section>
-```
+> Why settle for boring PDFs when your resume can have a gradient, emojis, and animated sass?
 
-## 📸 Preview
-![Resume Screenshot](https://i.postimg.cc/LqQ8gqz6/IMG-20240424-202626-1.jpg)
+## 📸 Screenshots
+
+![Hero Section](./box-8702500.jpg)
+
+## 🚀 Features
+
+- Fullscreen responsive layout with Tailwind CSS
+- Personalized design with fun emojis and real-world project stats
+- Live, scrollable portfolio section
+- Aesthetic vibes from Unsplash and GitHub-hosted assets
+- A footer that finally tells the truth about coffee addiction ☕
+
+## 🔧 Tech Stack
+
+- HTML + Tailwind CSS
+- Hosted on GitHub Pages
+- Designed with love, mistakes, and many Figma drafts
+
+## 🖼️ Image Credits
+
+- **Background Image:** [View on GitHub](https://github.com/rizzi-uwu/sumbul-rizvi-resume/blob/main/wp4804747-iphone-morbid-angek-wallpapers.jpg)
+- **Profile Placeholder:** [Box Image](https://github.com/rizzi-uwu/sumbul-rizvi-resume/blob/main/box-8702500.jpg)
+
+## 📬 Contact
+
+- 📧 [sumbulrizvi10092000@gmail.com](mailto:sumbulrizvi10092000@gmail.com)
+- 🌐 [LinkedIn](https://www.linkedin.com/in/sumbul-rizvi-iugermany)
+- 🏡 Based in Berlin, Germany 🇩🇪
 
 ---
 
-🔗 **Connect**: [LinkedIn](https://www.linkedin.com/in/sumbul-rizvi-iugermany) | [Email](mailto:sumbulrizvi10092000@gmail.com)
+> “If your resume doesn’t sparkle, how will your work?” ✨  
+> — Definitely Not Steve Jobs
+
