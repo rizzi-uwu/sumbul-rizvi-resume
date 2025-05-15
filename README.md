@@ -1,7 +1,9 @@
 # 🐈‍⬛ Sumbul Rizvi's Interactive Resume
 
-[![Live Demo](https://img.shields.io/badge/View_Live-Resume-8A2BE2?style=for-the-badge&logo=github)](https://YOUR-USERNAME.github.io/interactive-resume)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/YOUR-USERNAME/interactive-resume?color=blue&style=for-the-badge)](https://github.com/YOUR-USERNAME/interactive-resume/commits)
+[![Live Resume](https://img.shields.io/badge/View_Resume_→-Live_Site-8A2BE2?style=for-the-badge&logo=github)](https://rizzi-uwu.github.io/sumbul-rizvi-resume/)
+
+✨ Project Manager | UX Explorer | Data Storyteller  
+...
 
 ✨ **A playful yet professional resume built with:**  
 - Tailwind CSS for styling  
