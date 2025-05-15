@@ -13,6 +13,10 @@ A web-based resume to showcase my journey as a:
 
 > Why settle for boring PDFs when your resume can have a gradient, emojis, and animated sass?
 
+## 🔗 Live Resume
+
+👉 [Click here to view the resume](https://rizzi-uwu.github.io/sumbul-rizvi-resume/)
+
 ## 📸 Screenshots
 
 ![Hero Section](./box-8702500.jpg)
@@ -46,4 +50,3 @@ A web-based resume to showcase my journey as a:
 
 > “If your resume doesn’t sparkle, how will your work?” ✨  
 > — Definitely Not Steve Jobs
-
