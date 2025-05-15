@@ -1,52 +1,71 @@
-# 🌸 Sumbul Rizvi - Digital Resume
+# 🌸 Sumbul Rizvi - Professional Portfolio
 
-Welcome to my interactive, quirky, and beautifully-coded digital portfolio made with 💖, Tailwind CSS, and a bit of caffeine!
+![Portfolio Preview](https://raw.githubusercontent.com/rizzi-uwu/sumbul-rizvi-resume/main/box-8702500.jpg)
 
-## 💼 What This Is
-
-A web-based resume to showcase my journey as a:
-
-- 🎯 Project Management Associate  
-- 🧠 UX Researcher  
-- 📊 Data Enthusiast  
-- 😺 Professional Cat Herder (unofficial title)
-
-> Why settle for boring PDFs when your resume can have a gradient, emojis, and animated sass?
-
-## 🔗 Live Resume
-
-👉 [Click here to view the resume](https://rizzi-uwu.github.io/sumbul-rizvi-resume/)
-
-## 📸 Screenshots
-
-![Hero Section](./box-8702500.jpg)
+Welcome to my interactive professional portfolio showcasing my skills in project management, data analysis, and creative design.
 
 ## 🚀 Features
 
-- Fullscreen responsive layout with Tailwind CSS
-- Personalized design with fun emojis and real-world project stats
-- Live, scrollable portfolio section
-- Aesthetic vibes from Unsplash and GitHub-hosted assets
-- A footer that finally tells the truth about coffee addiction ☕
+- **Modern Responsive Design**: Works perfectly on all devices
+- **Interactive Elements**: Hover effects and smooth transitions
+- **Project Showcase**: Detailed case studies of my work
+- **Visual Storytelling**: Combines data and design effectively
 
-## 🔧 Tech Stack
+## 🛠️ Technologies Used
 
-- HTML + Tailwind CSS
-- Hosted on GitHub Pages
-- Designed with love, mistakes, and many Figma drafts
+- **Frontend**: HTML5, Tailwind CSS
+- **Visual Design**: Custom graphics and layout
+- **Hosting**: GitHub Pages
 
-## 🖼️ Image Credits
+## 📂 Project Structure
+t finally tells the truth about coffee addiction ☕
 
-- **Background Image:** [View on GitHub](https://github.com/rizzi-uwu/sumbul-rizvi-resume/blob/main/wp4804747-iphone-morbid-angek-wallpapers.jpg)
-- **Profile Placeholder:** [Box Image](https://github.com/rizzi-uwu/sumbul-rizvi-resume/blob/main/box-8702500.jpg)
+portfolio/
+├── index.html # Main portfolio page
+├── assets/ # All image assets
+│ ├── profile.jpg # Profile picture
+│ └── background.jpg # Background image
+└── README.md # This documentation
+## 🌈 Key Sections
 
-## 📬 Contact
+1. **Professional Profile**
+   - Contact information
+   - Skills matrix
+   - Career overview
 
-- 📧 [sumbulrizvi10092000@gmail.com](mailto:sumbulrizvi10092000@gmail.com)
-- 🌐 [LinkedIn](https://www.linkedin.com/in/sumbul-rizvi-iugermany)
-- 🏡 Based in Berlin, Germany 🇩🇪
+2. **Data Analysis Projects**
+   - Cyclistic Bike Share Analysis (Python)
+   - London Bicycle Data Analysis (SQL)
 
----
+3. **Power BI Dashboards**
+   - Green Corporate KPI Dashboard (Conceptual)
+
+4. **Creative Design Work**
+   - Graphic design portfolio
+
+## 🚀 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rizzi-uwu/sumbul-rizvi-resume.git
+
+   ✨ Customization
+
+To personalize this portfolio:
+
+Replace images in /assets folder
+Update content in index.html
+Modify colors in Tailwind CSS classes
+Add new project sections as needed
+📄 License
+
+This project is open source and available under the MIT License.
+
+💖 Connect with me:
+
+LinkedIn
+📧 sumbulrizvi10092000@gmail.com
+
 
 > “If your resume doesn’t sparkle, how will your work?” ✨  
 > — Definitely Not Steve Jobs
