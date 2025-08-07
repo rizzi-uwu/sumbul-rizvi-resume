@@ -86,17 +86,19 @@
 <body class="bg-black text-white min-h-screen flex flex-col">
   <div class="relative w-full min-h-screen bg-cover bg-center" style="background-image: url('https://i.ibb.co/VcpwfpFs/cat-han-W-5-Eakb1598-unsplash.jpg');">
     <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div> 
+     <div id="header-placeholder"></div>
 
-    <header class="relative z-10 p-6 flex justify-between items-center">
-      <h1 class="text-2xl font-light tracking-wide">
-        <a href="index.html" class="text-white hover:text-pink-400 transition">Sumbul Rizvi</a> </h1>
-      <nav class="space-x-6">
-        <a href="home.html" class="text-white hover:text-pink-400 transition">Home</a>
-        <a href="projects.html" class="text-white hover:text-pink-400 transition">Projects</a>
-        <a href="experience.html" class="text-white hover:text-pink-400 transition">Experience</a>
-        <a href="contact.html" class="text-white hover:text-pink-400 transition">Contact</a>
-      </nav>
-    </header>
+<header class="sticky top-0 z-20 bg-black/70 backdrop-blur-sm p-6 flex justify-between items-center">
+  <h1 class="text-2xl font-light tracking-wide">
+    <a href="index.html" class="text-white hover:text-pink-400 transition">Sumbul Rizvi</a>
+  </h1>
+  <nav class="space-x-6">
+    <a href="home.html" class="text-white hover:text-pink-400 transition">Home</a>
+    <a href="projects.html" class="text-white hover:text-pink-400 transition">Projects</a>
+    <a href="experience.html" class="text-white hover:text-pink-400 transition">Experience</a>
+    <a href="contact.html" class="text-white hover:text-pink-400 transition">Contact</a>
+  </nav>
+</header>
 
     <main class="relative z-10 px-6 py-12">
       <h2 class="text-4xl md:text-5xl font-light text-center mb-10">Projects</h2>
@@ -247,6 +249,9 @@
         closeModal();
       }
     });
+    <script>
+    fetch('header.html')
+      .then(res => res.text
   </script>
 </body>
 </html>

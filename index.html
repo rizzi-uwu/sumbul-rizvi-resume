@@ -17,15 +17,21 @@
 <body class="bg-black text-white min-h-screen flex flex-col">
   <div class="relative w-full h-screen bg-cover bg-center" style="background-image: url('https://i.ibb.co/VcpwfpFs/cat-han-W-5-Eakb1598-unsplash.jpg');">
     <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
-    <header class="relative z-10 p-6 flex justify-between items-center">
-      <h1 class="text-2xl font-light tracking-wide">Sumbul Rizvi</h1>
-      <nav class="space-x-6">
-        <a href="home.html" class="text-white hover:text-pink-400 transition">Home</a>
-        <a href="projects.html" class="text-white hover:text-pink-400 transition">Projects</a>
-        <a href="experience.html" class="text-white hover:text-pink-400 transition">Experience</a>
-        <a href="contact.html" class="text-white hover:text-pink-400 transition">Contact</a>
-      </nav>
-    </header>
+
+  <div id="header-placeholder"></div>
+
+ <header class="sticky top-0 z-20 bg-black/70 backdrop-blur-sm p-6 flex justify-between items-center">
+  <h1 class="text-2xl font-light tracking-wide">
+    <a href="index.html" class="text-white hover:text-pink-400 transition">Sumbul Rizvi</a>
+  </h1>
+  <nav class="space-x-6">
+    <a href="home.html" class="text-white hover:text-pink-400 transition">Home</a>
+    <a href="projects.html" class="text-white hover:text-pink-400 transition">Projects</a>
+    <a href="experience.html" class="text-white hover:text-pink-400 transition">Experience</a>
+    <a href="contact.html" class="text-white hover:text-pink-400 transition">Contact</a>
+  </nav>
+</header>
+
 
     <main class="relative z-10 flex flex-col items-center justify-center text-center px-6 h-full">
       <h2 class="text-5xl md:text-6xl font-light mb-4 leading-tight">Calmly Managing Chaos</h2>
@@ -36,12 +42,20 @@
           shadow-md hover:shadow-pink-500/30 transition duration-300 ease-in-out
           hover:scale-105">
   <span class="inline-block transition-transform group-hover:translate-y-1">
-    See My Work 
+    About me 
   </span>
 </a>
 
     </main>
   </div>
+
+    <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
 
   <footer class="text-center text-sm text-gray-400 p-4">
     © 2025 Sumbul Rizvi. All rights reserved.
