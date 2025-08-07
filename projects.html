@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sumbul Rizvi - Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Hover animation on cards */
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(255, 105, 180, 0.6);
+      background-color: rgba(255 255 255 / 0.3);
+    }
+
+    /* Modal backdrop */
+    .modal-backdrop {
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(6px);
+      position: fixed;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 50;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .modal-backdrop.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Modal content */
+    .modal-content {
+      background: rgba(255 255 255 / 0.1);
+      border-radius: 1rem;
+      padding: 2rem;
+      max-width: 600px;
+      width: 90%;
+      color: white;
+      box-shadow: 0 0 30px rgba(255, 105, 180, 0.7);
+      position: relative;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Close button */
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    /* Upcoming project pulse animation */
+    @keyframes pulsePink {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7);
+      }
+      50% {
+        box-shadow: 0 0 15px 10px rgba(255, 105, 180, 0.3);
+      }
+    }
+    .upcoming {
+      animation: pulsePink 2.5s infinite ease-in-out;
+      border-color: rgba(255 105 180 / 0.7);
+    }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+  <div class="relative w-full min-h-screen bg-cover bg-center" style="background-image: url('https://i.ibb.co/VcpwfpFs/cat-han-W-5-Eakb1598-unsplash.jpg');">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div> 
+
+    <header class="relative z-10 p-6 flex justify-between items-center">
+      <h1 class="text-2xl font-light tracking-wide">
+        <a href="newwebsite.html" class="text-white hover:text-pink-400 transition">Sumbul Rizvi</a> </h1>
+      <nav class="space-x-6">
+        <a href="home.html" class="text-white hover:text-pink-400 transition">Home</a>
+        <a href="projects.html" class="text-white hover:text-pink-400 transition">Projects</a>
+        <a href="experience.html" class="text-white hover:text-pink-400 transition">Experience</a>
+        <a href="contact.html" class="text-white hover:text-pink-400 transition">Contact</a>
+      </nav>
+    </header>
+
+    <main class="relative z-10 px-6 py-12">
+      <h2 class="text-4xl md:text-5xl font-light text-center mb-10">Projects</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+       <!-- Project 1 -->
+<a href="https://github.com/rizzi-uwu/Cyclistic-Bike-share-Analysis-Case-Study-Python-.git" target="_blank" rel="noopener noreferrer" class="block">
+  <div tabindex="0" 
+       class="project-card backdrop-blur-lg bg-white/10 p-6 rounded-2xl border border-white/20 
+              hover:bg-white/20 transition duration-300 ease-in-out 
+              active:opacity-80 active:scale-95"
+       data-title="Cyclistic Bike Share Analysis"
+       data-desc="Analyzed 12 months of ride data using Python and created insights through data visualization for business strategy decisions."
+  >
+    <h3 class="text-xl font-semibold mb-2">Cyclistic Bike Share Analysis</h3>
+    <p class="text-gray-300 text-sm">Analyzed 12 months of ride data using Python and created insights through data visualization for business strategy decisions.</p>
+  </div>
+</a>
+
+
+
+        <!-- Project 2 -->
+<a href="https://github.com/rizzi-uwu/London-Bicycle-Data-Analysis.git" target="_blank" rel="noopener noreferrer" class="block">
+  <div tabindex="0" 
+       class="project-card backdrop-blur-lg bg-white/10 p-6 rounded-2xl border border-white/20 
+              hover:bg-white/20 active:bg-white/40 transition duration-300 ease-in-out 
+              active:opacity-80 active:scale-95"
+       data-title="London Bicycle Data Analysis"
+       data-desc="Explored and visualized London’s bike-sharing system data with Python libraries like Pandas, Matplotlib, and Seaborn."
+  >
+    <h3 class="text-xl font-semibold mb-2">London Bicycle Data Analysis</h3>
+    <p class="text-gray-300 text-sm">Explored and visualized London’s bike-sharing system data with Python libraries like Pandas, Matplotlib, and Seaborn.</p>
+  </div>
+</a>
+
+        <!-- Project 3 -->
+<a href="https://github.com/rizzi-uwu/green-corporate-dashboard.git" target="_blank" rel="noopener noreferrer" class="block">
+  <div tabindex="0" 
+       class="project-card backdrop-blur-lg bg-white/10 p-6 rounded-2xl border border-white/20 
+              hover:bg-white/20 active:bg-white/40 transition duration-300 ease-in-out 
+              active:opacity-80 active:scale-95"
+       data-title="Green Corporate Dashboard"
+       data-desc="Developed a corporate sustainability dashboard showing key metrics using Power BI and clean design principles."
+  >
+    <h3 class="text-xl font-semibold mb-2">Green Corporate Dashboard</h3>
+    <p class="text-gray-300 text-sm">Developed a corporate sustainability dashboard showing key metrics using Power BI and clean design principles.</p>
+  </div>
+</a>
+
+<!-- Graphic Design Portfolio Project -->
+<a href="https://drive.google.com/file/d/1JxzweBD0xjtrwfF-kjBf5jICZRqAqcuH/view" target="_blank" rel="noopener noreferrer" class="block">
+  <div tabindex="0" 
+       class="project-card relative backdrop-blur-lg bg-white/10 p-6 rounded-2xl border border-white/20 
+              hover:bg-white/20 active:bg-white transition duration-300 ease-in-out 
+              active:scale-95 focus-within:bg-white"
+       data-title="Graphic Design Portfolio"
+       data-desc="A curated collection of my graphic design works — posters, branding, social media creatives & more."
+  >
+    <h3 class="text-xl font-semibold mb-2 ">Graphic Design Portfolio</h3>
+    <p class="text-gray-300 text-sm mb-4">A curated collection of my graphic design works — posters, branding, social media creatives & more.</p>
+
+    <!-- View Here button, hidden by default -->
+    <button 
+      onclick="window.open('https://drive.google.com/file/d/1JxzweBD0xjtrwfF-kjBf5jICZRqAqcuH/view', '_blank')" 
+      class="absolute bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-md opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out
+             focus:opacity-100 focus:pointer-events-auto
+             group-focus-within:opacity-100 group-focus-within:pointer-events-auto
+             hover:bg-blue-700"
+      >
+      View Here
+    </button>
+  </div>
+</a>
+
+        <!-- Upcoming Project Card -->
+        <div tabindex="0" class="project-card upcoming backdrop-blur-lg bg-white/10 p-6 rounded-2xl border border-white/20 cursor-default">
+          <h3 class="text-xl font-semibold mb-2 text-pink-400">Upcoming Projects</h3>
+          <p class="text-pink-300 text-sm italic">Stay tuned for new exciting projects in the pipeline!</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div id="projectModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <h3 id="modalTitle" class="text-2xl font-semibold mb-4"></h3>
+      <p id="modalDesc" class="text-gray-300"></p>
+    </div>
+  </div>
+
+  <footer class="text-center text-sm text-gray-400 p-4 z-10 relative">
+    © 2025 Sumbul Rizvi. All rights reserved.
+  </footer>
+
+  <script>
+    // Modal Elements
+    const modal = document.getElementById('projectModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalCloseBtn = modal.querySelector('.modal-close');
+
+    // Open modal with content from clicked card
+    function openModal(title, desc) {
+      modalTitle.textContent = title;
+      modalDesc.textContent = desc;
+      modal.classList.add('show');
+      // trap focus inside modal if needed
+      modalCloseBtn.focus();
+    }
+
+    // Close modal
+    function closeModal() {
+      modal.classList.remove('show');
+    }
+
+    // Event listeners for project cards except the upcoming one (which has no preview)
+    document.querySelectorAll('.project-card').forEach(card => {
+      // Skip upcoming project card
+      if(card.classList.contains('upcoming')) return;
+
+      card.addEventListener('click', () => {
+        const title = card.getAttribute('data-title');
+        const desc = card.getAttribute('data-desc');
+        openModal(title, desc);
+      });
+      // Also allow keyboard access for accessibility
+      card.addEventListener('keydown', (e) => {
+        if(e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          const title = card.getAttribute('data-title');
+          const desc = card.getAttribute('data-desc');
+          openModal(title, desc);
+        }
+      });
+    });
+
+    // Close modal events
+    modalCloseBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if(e.target === modal) closeModal();
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape' && modal.classList.contains('show')) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>

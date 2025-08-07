@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sumbul Rizvi — Experience</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: url('https://i.ibb.co/VcpwfpFs/cat-han-W-5-Eakb1598-unsplash.jpg') center/cover no-repeat;
+      color: white;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Full-page glass blur effect */
+    .glass-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 0;
+    }
+
+    #content-wrapper {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 10;
+    }
+
+    /* Timeline styling */
+    .timeline {
+      position: relative;
+      margin-left: 1rem;
+      padding-left: 2rem;
+      border-left: 3px solid rgba(255 105 180 / 0.6);
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: -12px;
+      top: 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: rgba(255 105 180 / 0.9);
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 10px rgba(255 105 180, 0.7);
+    }
+
+    .collapse-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .collapse-content.open {
+      max-height: 500px;
+    }
+
+    .experience-header {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .experience-header:hover,
+    .experience-header:focus {
+      outline: none;
+      color: #ff69b4;
+    }
+
+    /* Skill Cards */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-card {
+      background: rgba(255 105 180 / 0.1);
+      border-radius: 0.75rem;
+      border: 1px solid rgba(255 105 180 / 0.3);
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 0 10px rgba(255 105 180, 0.1);
+      color: #ffc0cbcc;
+    }
+
+    .skill-card h3 {
+      color: #ff69b4;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .skill-card ul {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+    }
+
+    .skill-card ul li {
+      margin-bottom: 0.4rem;
+      color: #eee;
+      font-weight: 400;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="glass-overlay"></div>
+
+  <div id="content-wrapper">
+    <!-- Header -->
+    <header class="sticky top-0 p-6 flex justify-between items-center">
+      <h1 class="text-2xl font-light tracking-wide">
+        <a href="newwebsite.html" class="text-white hover:text-pink-400 transition">Sumbul Rizvi</a> </h1>
+      <nav class="space-x-6">
+        <a href="home.html" class="text-white hover:text-pink-400 transition">Home</a>
+        <a href="projects.html" class="text-white hover:text-pink-400 transition">Projects</a>
+        <a href="experience.html" class="text-white hover:text-pink-400 transition">Experience</a>
+        <a href="contact.html" class="text-white hover:text-pink-400 transition">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex justify-center px-6 md:px-12 py-12 overflow-auto">
+      <div class="max-w-4xl w-full space-y-16">
+
+        <!-- Experience -->
+        <h2 class="text-4xl font-light mb-8 text-center">Experience</h2>
+        <div class="timeline space-y-12 relative">
+
+          <!-- Item 1 -->
+          <section class="relative pl-8">
+            <span class="timeline-marker"></span>
+            <button class="experience-header w-full text-left focus:ring-2 focus:ring-pink-400">
+              <h3 class="text-2xl font-semibold">Operations & Accommodation Intern</h3>
+              <p class="text-pink-400 font-medium">Rhine-Ruhr 2025 — 06/2025 – 08/2025</p>
+              <p class="text-gray-400 italic">Berlin, Germany</p>
+            </button>
+            <div id="exp1-details" class="collapse-content text-gray-300 mt-4 pl-4 border-l border-pink-400/50" hidden>
+              <ul class="list-disc space-y-2">
+                <li>Prepared executive-level presentations and KPI dashboards in PowerPoint and Excel for daily updates and weekly reviews.</li>
+                <li>Coordinated logistics and event preparation for international client visits and internal workshops.</li>
+                <li>Assisted in communication planning using templates and schedules for team announcements and event invites.</li>
+                <li>Supported cross-team coordination through Slack, Notion, and Excel-based planning sheets.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Item 2 -->
+          <section class="relative pl-8">
+            <span class="timeline-marker"></span>
+            <button class="experience-header w-full text-left focus:ring-2 focus:ring-pink-400">
+              <h3 class="text-2xl font-semibold">Project Management Associate</h3>
+              <p class="text-pink-400 font-medium">Inland Infratech Pvt. Ltd. — 09/2023 – 08/2024</p>
+              <p class="text-gray-400 italic">Bangalore, India</p>
+            </button>
+            <div id="exp2-details" class="collapse-content text-gray-300 mt-4 pl-4 border-l border-pink-400/50" hidden>
+              <ul class="list-disc space-y-2">
+                <li>Conducted customer and competitor research, providing data-driven recommendations for client engagement strategies.</li>
+                <li>Managed contract estimation and reporting tasks, supporting internal presentations for partnership meetings.</li>
+                <li>Worked on Excel-based tracking sheets and KPIs for performance monitoring and internal stakeholder updates.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Item 3 -->
+          <section class="relative pl-8">
+            <span class="timeline-marker"></span>
+            <button class="experience-header w-full text-left focus:ring-2 focus:ring-pink-400">
+              <h3 class="text-2xl font-semibold">UX Research & Product Intern</h3>
+              <p class="text-pink-400 font-medium">Cendrol Constructions — 05/2023 – 08/2023</p>
+              <p class="text-gray-400 italic">Bangalore, India</p>
+            </button>
+            <div id="exp3-details" class="collapse-content text-gray-300 mt-4 pl-4 border-l border-pink-400/50" hidden>
+              <ul class="list-disc space-y-2">
+                <li>Designed client-facing marketing content, improving engagement for new campaigns.</li>
+                <li>Conducted competitive benchmarking and created research reports supporting the marketing and customer success teams.</li>
+                <li>Assisted in template creation for outreach and feedback loops across digital channels.</li>
+                <li>Collaborated on user feedback analysis to recommend product and communication improvements.</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <!-- Skills Section -->
+        <section>
+          <h2 class="text-3xl font-light mb-6 text-center">Skills & Tools</h2>
+          <div class="skills-grid">
+
+            <div class="skill-card">
+              <h3>Technical Tools</h3>
+              <ul>
+                <li>SQL</li>
+                <li>Python (Pandas)</li>
+                <li>CMS (basic WordPress, HTML, CSS)</li>
+                <li>Microsoft Office 365</li>
+                <li>Power BI</li>
+                <li>JIRA</li>
+                <li>Notion</li>
+                <li>HubSpot</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Data & Analytics</h3>
+              <ul>
+                <li>Data cleaning</li>
+                <li>KPI tracking</li>
+                <li>Dashboard creation</li>
+                <li>A/B testing</li>
+                <li>Business Process Documentation</li>
+                <li>Scenario Modeling</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Soft Skills</h3>
+              <ul>
+                <li>Detail-oriented</li>
+                <li>Structured thinker</li>
+                <li>Proactive and self-driven</li>
+                <li>Team-oriented communicator</li>
+                <li>Presentation</li>
+                <li>Conflict Resolution</li>
+                <li>Cross-team Communication</li>
+                <li>User-focused problem-solving</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>PM Tools</h3>
+              <ul>
+                <li>Notion</li>
+                <li>JIRA</li>
+                <li>Asana</li>
+                <li>ClickUp</li>
+                <li>Trello</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Analytic Tools</h3>
+              <ul>
+                <li>SQL</li>
+                <li>Pandas</li>
+                <li>Microsoft Excel</li>
+                <li>PowerBI</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Collaboration</h3>
+              <ul>
+                <li>Agile/Scrum</li>
+                <li>Process Improvement</li>
+                <li>Time & Resource management</li>
+                <li>Event management</li>
+                <li>Stakeholder Engagement</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Communications</h3>
+              <ul>
+                <li>Content Writing</li>
+                <li>Blogging</li>
+                <li>Social Media</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-400 p-4">
+      © 2025 Sumbul Rizvi. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Toggle experience sections
+    document.querySelectorAll('.experience-header').forEach(button => {
+      button.addEventListener('click', () => {
+        const section = button.nextElementSibling;
+        const isOpen = section.classList.contains('open');
+
+        if (isOpen) {
+          section.classList.remove('open');
+          setTimeout(() => section.hidden = true, 350);
+        } else {
+          section.hidden = false;
+          setTimeout(() => section.classList.add('open'), 10);
+        }
+      });
+
+      button.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          button.click();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sumbul Rizvi — Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: url('https://i.ibb.co/VcpwfpFs/cat-han-W-5-Eakb1598-unsplash.jpg') center/cover no-repeat;
+      color: white;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .glass-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 0;
+    }
+
+    #content-wrapper {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 10;
+    }
+
+    a:hover {
+      color: #ff69b4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glass-overlay"></div>
+
+  <div id="content-wrapper">
+    <!-- Header -->
+    <header class="sticky top-0 p-6 flex justify-between items-center">
+      <h1 class="text-2xl font-light tracking-wide">
+        <a href="newwebsite.html" class="text-white hover:text-pink-400 transition"> Sumbul Rizvi</a> </h1>
+      <nav class="space-x-6">
+        <a href="home.html" class="text-white hover:text-pink-400 transition">Home</a>
+        <a href="projects.html" class="text-white hover:text-pink-400 transition">Projects</a>
+        <a href="experience.html" class="text-white hover:text-pink-400 transition">Experience</a>
+        <a href="contact.html" class="text-white hover:text-pink-400 transition font-semibold">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center justify-center px-6 py-12 text-center max-w-xl mx-auto space-y-6">
+
+      <h2 class="text-4xl font-bold mb-4">Let’s Connect!</h2>
+
+      <p class="text-lg text-gray-300">
+        I'm always open to discussing new projects, creative ideas, or collaboration opportunities. Whether it’s a quick hello or a serious pitch — drop a message!
+      </p>
+
+      <!-- Buttons -->
+      <div class="mt-8 grid gap-4 md:grid-cols-3 w-full">
+        <a href="mailto:sumbulrizvi12@gmail.com"
+           class="bg-pink-500/20 hover:bg-pink-500/30 text-white px-6 py-3 rounded-xl border border-pink-400 backdrop-blur-sm shadow-lg hover:scale-105 transform transition duration-300 text-sm font-medium">
+          📧 Email Me
+        </a>
+        <a href="https://github.com/rizzi-uwu" target="_blank"
+           class="bg-pink-500/20 hover:bg-pink-500/30 text-white px-6 py-3 rounded-xl border border-pink-400 backdrop-blur-sm shadow-lg hover:scale-105 transform transition duration-300 text-sm font-medium">
+          💻 View GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/sumbul-rizvi-iugermany/" target="_blank"
+           class="bg-pink-500/20 hover:bg-pink-500/30 text-white px-6 py-3 rounded-xl border border-pink-400 backdrop-blur-sm shadow-lg hover:scale-105 transform transition duration-300 text-sm font-medium">
+          🔗 Connect on LinkedIn
+        </a>
+      </div>
+
+      <div class="mt-8 text-sm text-gray-400">Made with love by Sumbul Rizvi</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-400 p-4">
+      © 2025 Sumbul Rizvi. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>

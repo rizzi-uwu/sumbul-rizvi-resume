@@ -1,251 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumbul Rizvi - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-image: url('https://raw.githubusercontent.com/rizzi-uwu/sumbul-rizvi-resume/409371e5830ffe0e416f91153dd7cf5a963341a8/v1023-022-c.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sumbul Rizvi Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
-<body class="min-h-screen p-4 sm:p-6">
-    <!-- Main content container -->
-    <section class="max-w-4xl mx-auto py-12 px-6 text-gray-800 rounded-3xl shadow-2xl bg-white/80 backdrop-blur-sm border border-gray-200">
-        
-        <!-- Profile Section -->
-        <div class="text-center mb-10">
-            <img 
-                src="https://raw.githubusercontent.com/rizzi-uwu/sumbul-rizvi-resume/main/box-8702500.jpg" 
-                alt="Sumbul Rizvi" 
-                class="mx-auto rounded-full border-4 border-pink-300 shadow-lg w-32 h-32 object-cover"
-            >
-            <h1 class="text-4xl font-bold mt-4">🌸 Sumbul Rizvi</h1>
-            <p class="text-lg text-gray-600">Project Manager | UX Explorer | Data Storyteller</p>
-        </div>
 
-        <!-- Contact Section -->
-        <div class="text-center mb-8 space-y-2 text-sm text-gray-700">
-            <p>📍 Berlin, Germany</p>
-            <p>📧 <a href="mailto:sumbulrizvi10092000@gmail.com" class="text-blue-600 underline">sumbulrizvi10092000@gmail.com</a></p>
-            <p>📞 +49 15510049246</p>
-            <p>💼 <a href="https://www.linkedin.com/in/sumbul-rizvi-iugermany" target="_blank" class="text-blue-600 underline">LinkedIn Profile</a></p>
-        </div>
+<body class="bg-black text-white min-h-screen flex flex-col">
+  <div class="relative w-full h-screen bg-cover bg-center" style="background-image: url('https://i.ibb.co/VcpwfpFs/cat-han-W-5-Eakb1598-unsplash.jpg');">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <header class="relative z-10 p-6 flex justify-between items-center">
+      <h1 class="text-2xl font-light tracking-wide">Sumbul Rizvi</h1>
+      <nav class="space-x-6">
+        <a href="home.html" class="text-white hover:text-pink-400 transition">Home</a>
+        <a href="projects.html" class="text-white hover:text-pink-400 transition">Projects</a>
+        <a href="experience.html" class="text-white hover:text-pink-400 transition">Experience</a>
+        <a href="contact.html" class="text-white hover:text-pink-400 transition">Contact</a>
+      </nav>
+    </header>
 
-        <hr class="border-t-2 border-pink-200 my-8">
+    <main class="relative z-10 flex flex-col items-center justify-center text-center px-6 h-full">
+      <h2 class="text-5xl md:text-6xl font-light mb-4 leading-tight">Calmly Managing Chaos</h2>
+      <p class="text-lg md:text-xl text-gray-300 max-w-xl">Strategic thinking with a designer’s eye and an analyst’s mind.</p>
+      <a href="projects.html"
+   class="group mt-8 px-6 py-3 rounded-xl border border-white/30 text-white 
+          hover:bg-pink-500/20 hover:border-pink-400 backdrop-blur-sm 
+          shadow-md hover:shadow-pink-500/30 transition duration-300 ease-in-out
+          hover:scale-105">
+  <span class="inline-block transition-transform group-hover:translate-y-1">
+    See My Work 
+  </span>
+</a>
 
-        <!-- About Section -->
-        <section class="mb-10 text-center">
-            <h2 class="text-2xl font-semibold mb-2">🌼 About Me</h2>
-            <p class="text-base text-gray-700 leading-relaxed max-w-xl mx-auto">
-                <span class="font-bold">Professional Cat Herder (officially: Project Manager)</span> who specializes in:<br>
-                • Herding cross-functional teams toward deadlines 🐱🐱🐱→ 🎯<br>
-                • Translating "urgent" from stakeholder-ese into actual priorities 🔄<br>
-                • Turning "this is fine" dumpster fires into organised burn plans 🔥→ 📊<br>
-                My superpower? Making collaboration feel less like wrangling and more like a well-timed treat.
-            </p>
-        </section>
+    </main>
+  </div>
 
-        <!-- Skills Section -->
-        <section class="mb-10">
-            <h2 class="text-2xl font-semibold mb-4">🛠️ Skills & Tools</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-700">
-                <div>📋 Notion, JIRA, Asana</div>
-                <div>🗒️ ClickUp, Trello</div>
-                <div>📊 Power BI, SQL, Excel</div>
-                <div>👥 Agile, Scrum, Stakeholder Management</div>
-                <div>🎨 Canva, UX Research, Figma</div>
-                <div>💬 Content Writing, Conflict Resolution</div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="mb-10">
-            <h2 class="text-2xl font-semibold mb-4">💼 Work Experience</h2>
-
-            <div class="mb-6">
-                <h3 class="text-lg font-bold">🏗️ Inland Infratech Pvt. Ltd.</h3>
-                <p class="text-sm text-gray-600">Project Management Associate | Sep 2023 – Aug 2024</p>
-                <ul class="list-disc list-inside text-sm mt-2 space-y-1">
-                    <li>Led cross-functional teams across 5+ infra projects 🏗️</li>
-                    <li>Streamlined docs & dashboards with JIRA 📈</li>
-                    <li>Saved 15% project costs without breaking quality 😎</li>
-                    <li>Power BI reports admired even by non-tech folks 👀</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-lg font-bold">🧪 Cendrol Constructions</h3>
-                <p class="text-sm text-gray-600">UX Research & Product Intern | May 2023 – Aug 2023</p>
-                <ul class="list-disc list-inside text-sm mt-2 space-y-1">
-                    <li>Ran UX studies → boosted user joy by 30% 💖</li>
-                    <li>Supported sprints & product flow like a ninja 🥷</li>
-                    <li>Turned research into pretty & powerful decks 🎨</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section class="mb-10">
-            <h2 class="text-2xl font-semibold mb-4">🎓 Education</h2>
-            <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
-                <li>📘 M.A. International Management – IU Berlin (Grade: 1.7)</li>
-                <li>📗 Bachelor of Laws – REVA University, India</li>
-            </ul>
-        </section>
-
-        <!-- Languages and Certs -->
-        <section class="mb-10">
-            <h2 class="text-2xl font-semibold mb-4">📚 Certifications & Languages</h2>
-            <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
-                <li>🧩 Google Project Management (Coursera)</li>
-                <li>⚖️ International Mediation – Enhelion</li>
-                <li>🗣️ English (C1), German (A2 ➜ B1 in Progress 🚀)</li>
-            </ul>
-        </section>
-
-        <!-- Data Analysis Projects -->
-        <section class="mb-10">
-            <h2 class="text-2xl font-semibold mb-6">🚀 Data Analysis Projects</h2>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- Cyclistic Bike Share Project -->
-                <a href="https://github.com/rizzi-uwu/Cyclistic-Bike-share-Analysis-Case-Study-Python-/blob/main/notebook16b4894f2e.ipynb" 
-                   target="_blank"
-                   class="block p-6 border border-gray-200 rounded-lg hover:bg-pink-50 transition-colors">
-                    <div class="flex items-center mb-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                        <h3 class="text-lg font-bold text-gray-800">Cyclistic Bike Share Analysis</h3>
-                    </div>
-                    <p class="text-sm text-gray-600 mb-2">Python Data Analysis Case Study</p>
-                    <div class="flex flex-wrap gap-2 mt-3">
-                        <span class="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">Python</span>
-                        <span class="px-2 py-1 text-xs bg-green-100 text-green-800 rounded-full">Pandas</span>
-                        <span class="px-2 py-1 text-xs bg-purple-100 text-purple-800 rounded-full">Data Visualization</span>
-                    </div>
-                </a>
-                
-                <!-- London Bicycle Data Project -->
-                <a href="https://github.com/rizzi-uwu/London-Bicycle-Data-Analysis/blob/main/sql-analysis.ipynb" 
-                   target="_blank"
-                   class="block p-6 border border-gray-200 rounded-lg hover:bg-blue-50 transition-colors">
-                    <div class="flex items-center mb-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
-                        </svg>
-                        <h3 class="text-lg font-bold text-gray-800">London Bicycle Data Analysis</h3>
-                    </div>
-                    <p class="text-sm text-gray-600 mb-2">SQL Data Exploration Project</p>
-                    <div class="flex flex-wrap gap-2 mt-3">
-                        <span class="px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded-full">SQL</span>
-                        <span class="px-2 py-1 text-xs bg-red-100 text-red-800 rounded-full">BigQuery</span>
-                        <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-800 rounded-full">Data Cleaning</span>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <!-- Power BI Dashboard Projects -->
-        <section class="mb-10">
-            <h2 class="text-2xl font-semibold mb-6">📊 Power BI Dashboard Projects</h2>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- Green Corporate KPI Dashboard -->
-                <div class="p-6 border border-gray-200 rounded-lg hover:bg-green-50 transition-colors">
-                    <div class="flex items-center mb-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                        </svg>
-                        <h3 class="text-lg font-bold text-gray-800">Green Corporate KPI Dashboard</h3>
-                    </div>
-                    
-                    <p class="text-sm text-gray-600 mb-4">
-                        Conceptual Power BI dashboard tracking financial, operational, customer, and sustainability metrics with interactive visualizations.
-                    </p>
-                    
-                    <div class="mb-4">
-                        <img src="https://raw.githubusercontent.com/rizzi-uwu/green-corporate-dashboard/main/Green%20Corporate%20KPI%20Review%20Dashboard%20Presentation%20-%201.PNG" 
-                             alt="Dashboard Preview" 
-                             class="rounded-lg border border-gray-200 shadow-sm w-full h-auto">
-                    </div>
-                    
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 text-xs bg-green-100 text-green-800 rounded-full">Power BI</span>
-                        <span class="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">Data Visualization</span>
-                        <span class="px-2 py-1 text-xs bg-purple-100 text-purple-800 rounded-full">KPI Tracking</span>
-                        <span class="px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded-full">Dashboard Design</span>
-                    </div>
-                    
-                    <div class="flex flex-wrap gap-3">
-                        <a href="https://github.com/rizzi-uwu/green-corporate-dashboard" 
-                           target="_blank"
-                           class="flex items-center px-3 py-1 text-sm bg-gray-100 text-gray-800 rounded hover:bg-gray-200 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                            </svg>
-                            View Code
-                        </a>
-                        
-                        <a href="https://drive.google.com/file/d/1m4enQllKz5pHaf6ZgIEOhPIjnuD0z0ar/view" 
-                           target="_blank"
-                           class="flex items-center px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded hover:bg-blue-200 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
-                            Case Study
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Placeholder for next project -->
-                <div class="p-6 border-2 border-dashed border-gray-300 rounded-lg text-center flex items-center justify-center">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                        </svg>
-                        <p class="mt-2 text-gray-500">Your next dashboard project</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Creative Side Project Section -->
-        <section class="mb-10">
-            <h2 class="text-2xl font-semibold mb-4">🎨 Creative Side Project</h2>
-            <p class="text-base text-gray-700 max-w-3xl mx-auto mb-4">
-                Beyond project timelines and stakeholder meetings, I nurture my creativity as a graphic designer.  
-                Designing brand identities, marketing materials, and UI concepts helps sharpen my <strong>attention to detail</strong>, <strong>visual communication</strong>, and <strong>client collaboration</strong> skills — all of which feed back into better project management.
-            </p>
-
-            <h3 class="text-lg font-semibold mb-2">🧰 Tools I Use</h3>
-            <ul class="list-disc list-inside text-sm text-gray-700 max-w-xl mx-auto mb-4">
-                <li>Adobe Illustrator & Photoshop</li>
-                <li>Canva, Figma, Procreate</li>
-                <li>Typography, color theory, and layout design</li>
-            </ul>
-
-            <div class="text-center">
-                <a href="https://drive.google.com/file/d/1JxzweBD0xjtrwfF-kjBf5jICZRqAqcuH/view" target="_blank" 
-                   class="inline-block px-5 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
-                    📂 View My Graphic Design Portfolio (PDF)
-                </a>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <div class="text-center text-xs text-gray-500 mt-12">
-            <p>Made with 💕 and too much ☕ by Sumbul</p>
-        </div>
-    </section>
+  <footer class="text-center text-sm text-gray-400 p-4">
+    © 2025 Sumbul Rizvi. All rights reserved.
+  </footer>
 </body>
+
 </html>
