@@ -175,18 +175,24 @@
     <h3 class="text-xl font-semibold mb-2 ">Graphic Design Portfolio</h3>
     <p class="text-gray-300 text-sm mb-4">A curated collection of my graphic design works — posters, branding, social media creatives & more.</p>
 
-    <!-- View Here button -->
-    <button 
-      onclick="window.open('https://drive.google.com/file/d/1tlkIBjSg9kAfzsilDBWpxmIYFILr9FEp/view?usp=drive_link', '_blank')" 
-      class="absolute bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-md opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out
-             focus:opacity-100 focus:pointer-events-auto
-             group-focus-within:opacity-100 group-focus-within:pointer-events-auto
-             hover:bg-blue-700"
-      >
-      View Here
-    </button>
+      <!-- Buttons container -->
+    <div class="absolute bottom-6 right-6 flex gap-2">
+      <!-- PDF button -->
+      <button 
+        onclick="window.open('https://drive.google.com/file/d/1tlkIBjSg9kAfzsilDBWpxmIYFILr9FEp/view?usp=drive_link', '_blank')" 
+        class="bg-blue-600 text-white px-4 py-2 rounded-md transition duration-300 hover:bg-blue-700">
+        View PDF
+      </button>
+
+      <!-- Video button -->
+      <button 
+        onclick="window.open('https://drive.google.com/file/d/1VqPi9xpBiiPNFlIfh4DC40nyU5KwFUnh/view?usp=drive_link', '_blank')" 
+        class="bg-green-600 text-white px-4 py-2 rounded-md transition duration-300 hover:bg-green-700">
+        View Video
+      </button>
+    </div>
   </div>
-</a>
+</a> 
 
 
         <!-- Upcoming Project Card -->
